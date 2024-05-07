@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRANSLATER</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <input id="idInput" type="text"/>
+    <label id="idAnswer">Ответ</label>
+    <input type="button" onclick="wordbox.get()" value="Перевод"/>
+    
+</body>
+<script>
+    const wordbox = new Wordbox("idInput", "idAnswer");
+</script>
+</html>
