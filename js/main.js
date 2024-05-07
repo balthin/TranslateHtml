@@ -15,7 +15,12 @@ class Wordbox {
         let word = this.#elInput.value;
         
         let rus = this.#dictictionary.get(word.toLowerCase());
-        this.#elAnswer.innerHTML = rus;
+
+        if(rus){
+            this.#elAnswer.innerHTML = rus;
+        }else{
+            this.#elAnswer.innerHTML = "А нету...";
+        }
 
     }
 
