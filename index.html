@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <input id="idInput" type="text"/>
-    <label id="idAnswer">Ответ</label>
-    <input type="button" onclick="wordbox.get()" value="Перевод"/>
+    <div class="main-form">
+        <div>
+            <div class="english-word">
+                <label>Английское слово</label>
+                <input id="idInput" type="text"/>
+            </div>
+            <div>
+                <label id="idAnswer">Ответ</label>
+            </div>
+        </div>
+        <div>
+            <input type="button" onclick="wordbox.get()" value="Перевод"/>
+        </div>
+    </div>
 </body>
 <script>
     const wordbox = new Wordbox("idInput", "idAnswer");

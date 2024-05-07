@@ -13,7 +13,7 @@ class Wordbox {
 
     get(){
         let word = this.#elInput.value;
-        
+        word = word.trim();        
         let rus = this.#dictictionary.get(word.toLowerCase());
 
         if(rus){
@@ -28,6 +28,10 @@ class Wordbox {
         dict.set("humanity", "человечество");
         dict.set("corp", "труп");
         dict.set("troop", "группа");
+        dict.set("map", "карта");
+        dict.set("babushka", "большой платок");
     }
 
 }
+
+// Из объекта по ссылке создать Map как в тукущей программе: https://github.com/iuzhakov/English-Russian-vocabulary/blob/master/words.json
